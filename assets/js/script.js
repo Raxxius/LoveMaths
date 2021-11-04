@@ -45,7 +45,7 @@ function checkAnswer() {
     if (isCorrect) {
         alert("Hey! you got it right! :D");
     } else {
-        alert("Nah mate, ${userAnswer} is wrong, ${calculatedAnswer[0]} is correct.");
+        alert(`Nah mate, ${userAnswer} is wrong, ${calculatedAnswer[0]} is correct.`);
     }
 
     runGame(calculatedAnswer[1]);
