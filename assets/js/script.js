@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", function() {
  */
 function runGame(gameType) {
 
-    let num1 = math.floor(Math.random()*25)+1;
-    let num2 = math.floor(Math.random()*25)+1;
+    let num1 = Math.floor(Math.random()*25)+1;
+    let num2 = Math.floor(Math.random()*25)+1;
 }
 
     if (gameType === "addition") {
