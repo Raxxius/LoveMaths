@@ -26,7 +26,7 @@ function runGame(gameType) {
     if (gameType === "addition") {
         displayAdditionQuestion(num1, num2);
     } else if (gameType === "multiply") {
-        displayAdditionQuestion(num1, num2);
+        displayMultiplyQuestion(num1, num2);
     }    else {
         alert(`Unknown game type: $(gameType)`);
         throw `Unknown game type: $(gameType). Aborting!`;
