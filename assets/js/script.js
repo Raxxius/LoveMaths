@@ -32,10 +32,24 @@ function runGame(gameType) {
 
 }
 
+/**
+ * checks the answer is correct
+ */
+
 function checkAnswer() {
 
+    let userAnswer = parseInt(document.getElementById("answer-box").value);
+    let calculatedAnswer = calculateCorrectAnswer();
+    let isCorrect = userAnswer === calculatedAnswer[0];
 
-    
+    if (isCorrect) {
+        alert("Hey! you got it right! :D");
+    } else {
+        alert("Nah mate, $(userAnswer) is wrong, $(calculatedCorrectAnswer[0]) is correct.");
+    }
+
+    runGame(calculatedAnswer[1]);
+
 }
 
 /**
